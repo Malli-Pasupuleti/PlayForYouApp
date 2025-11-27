@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PLAYLIST_URL = 'http://localhost:8081/api/playlist'
+const PLAYLIST_URL = 'http://localhost:30025/api/playlist'
 
 export const songsForPlaylist = async () => {
     try {

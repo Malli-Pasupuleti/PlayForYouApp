@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const SONG_URL = 'http://localhost:8081'
+const SONG_URL = 'http://localhost:30025'
 
 const addSong = async (song) => {
     try {

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const USER_URL = "http://localhost:8081/api";
+const USER_URL = "http://localhost:30025/api";
 
 const createUser = async (user) => {
     try {
