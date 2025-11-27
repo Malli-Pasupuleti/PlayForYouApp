@@ -26,15 +26,15 @@ jobs:
       - name: Build and push backend image
         uses: docker/build-push-action@v5
         with:
-          context: ./backend
-          file: ./backend/backend.Dockerfile
+          context: ./PlayForYouApp
+          file: ./PlayForYouApp/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/musicapp-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
-          context: ./frontend
-          file: ./frontend/frontend.Dockerfile
+          context: ./playForYou-frontend
+          file: ./playForYou-frontend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/musicapp-frontend:latest
